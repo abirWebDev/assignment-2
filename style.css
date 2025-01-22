@@ -1,0 +1,561 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    height: 3000px
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1160px;
+    justify-content: space-between;
+}
+
+nav .logo-wrap{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav .logo-wrap h3{
+    font-size: 32px;
+}
+
+
+nav .list ul{
+    display: flex;
+
+}
+nav .list ul li{
+    display: flex;
+    text-decoration: none;
+    padding: 1.5rem;
+    font-size: 20px;
+    font-weight: 600;
+
+
+}
+nav .list ul .a{
+    color: orange;
+}
+nav .list ul .b{
+    color: rgb(62, 200, 255);
+}
+nav .list ul .c{
+    color: rgb(0, 255, 229);
+}
+nav .list ul .d{
+    color: rgb(76, 0, 255);
+}
+
+nav button{
+    font-size: 20px;
+    padding: 0.8rem 3rem;
+    border-radius: 10px;
+    border: none;
+    background-color: orange;
+    color: white;
+}
+nav .bar{
+    display: none;
+}
+
+@media screen  and (max-width : 390px){
+    nav h3{
+        display: none;
+    }
+    nav .list{
+        display: none;
+    }
+
+    nav .btn{
+        display: none;
+    }
+    nav .bar{
+        display: block;
+        font-size: 26px;
+    }
+    nav{
+        padding:10px 15px;
+        border-bottom: 1px solid orange;
+    }
+    nav .logo-wrap img{
+        height: 55px;
+    }
+
+
+}
+
+.marquee{
+    background-color: orange;
+    color: antiquewhite;
+    margin: 20px 0;
+    font-size: 24px;
+    padding: 5px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+.hero {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+
+.hero .text-wrap h3{
+    font-size: 56px ;
+    padding-right: 10px;
+}
+.hero .text-wrap .orange{
+    color: orange;
+    display: block;
+}
+.hero .text-wrap .blue{
+    color: rgb(0, 174, 255) ;
+}
+.hero .text-wrap p{
+    color: rgb(49, 49, 49) ;
+    margin: 2rem 0 ;
+    font-size: 20px;
+}
+    
+.hero .text-wrap button{
+    font-size: 20px;
+    padding: 0.8rem 3rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 243, 230);
+    font-weight: 700;
+}
+
+    
+@media screen  and (max-width : 390px){
+
+    .hero{
+        flex-direction: column-reverse;
+        max-width: 390px;
+        padding: 20px 0;
+        text-align: center;
+        
+    }
+    .hero .img-wrap{
+        overflow: none; 
+        max-width: 100%;
+    }
+    .hero img{
+        max-width: 100%;
+    }
+
+    .hero .text-wrap{
+        font-size:100px;
+    }
+
+
+}
+
+
+
+
+
+
+.card-sec{
+    background-image: url(assets/bg.png);
+    text-align: center;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.card-sec h3{
+    font-size: 46px;
+    margin: 3rem 0;
+}
+.card-sec .card-wrap{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.card-sec .card{
+   width: 33.33%;
+   height: 475px;
+   border-radius: 20px;
+   padding: 50px 30px ;
+}
+
+.grad-1{
+    background: linear-gradient(rgb(219, 240, 251) , rgb(255, 255, 255),white);
+    border: 1px solid rgba(0, 200, 255, 0.122);
+    box-shadow: 1px 3px 5px rgba(114, 130, 134, 0.299);
+}
+.grad-2{
+    background: linear-gradient(rgb(251, 246, 219) , rgb(255, 255, 255),white);
+    border: 1px solid rgba(255, 213, 0, 0.122);
+    box-shadow: 1px 3px 5px rgba(134, 128, 114, 0.299);
+}
+.grad-3{
+    background: linear-gradient(rgb(230, 219, 251) , rgb(255, 255, 255),white);
+    border: 1px solid rgba(115, 0, 255, 0.122);
+    box-shadow: 1px 3px 5px rgba(134, 114, 114, 0.299);
+
+}
+
+.card-sec .card h4{
+    font-size: 24px;
+    padding-top: 20px;
+}
+.card-sec .card p{
+    color: rgb(120, 120, 120);
+    padding: 20px 0;
+}
+.card-sec .card a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.card-sec .card .a{
+    color: rgb(3, 223, 223);
+}
+.card-sec .card .b{
+    color: orange;
+}
+.card-sec .card .c{
+    color: blueviolet;
+}
+
+.card-sec .arrow{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.card-sec .arrow p{
+    padding: 0px 10px 5px 11px ;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    background-color: orange;
+    border-radius: 500px;
+    margin: 4rem 0;
+
+}
+    
+.card-sec .arrow p:hover{
+    scale: 1.05;
+    transition: .3s all ease-in;
+    background-color: rgb(188, 78, 0);
+    box-shadow: 1px 1px 3px rgb(254, 165, 0);
+    border-radius: 20px;
+
+}
+
+
+@media screen  and (max-width : 390px){
+    .card-sec .arrow p{
+        display: none;
+
+    }
+    .card-sec .card-wrap{
+        flex-direction: column;
+    }
+    .card-sec .card{
+       width: 92%;
+       margin: 0 auto;
+       height: 325px;
+       border-radius: 20px;
+       padding: 20px ;
+    }
+    .card-sec .card img{
+    
+       height: 85px;
+    }
+    .card-sec .card h4{
+       font-size: 20px;
+    }
+    .card-sec h3{
+        font-size:1.7rem ;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.stories{
+        max-width: 1160px;
+        margin: 0 auto;
+        text-align: center;
+        background-image: url(assets/bg.png) ,linear-gradient(white, rgba(255, 227, 142, 0.729));
+        background-repeat: round;
+        background-position: center;
+        
+    }
+.stories h3{
+    font-size: 46px;
+    margin: 2rem 0;
+}
+    
+
+
+.grid{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    
+    
+
+
+}
+.stories .grid .big-card{
+    width: 45% ;
+   
+}
+.stories .container{
+    background-color: white;
+    border-radius: 20px;
+    text-align: left;
+    height: 100%;
+    
+    
+}
+.stories .grid .big-card img{
+    width: 100% ;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+}
+.stories .grid .big-card h4{
+   padding: 2rem;
+   font-size: 26px;
+   
+
+}
+.stories .grid .big-card p{
+   padding: 0 2rem 2rem 2rem;
+
+}
+.stories .position-center{
+    
+}
+.stories .position-center .middle{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    left: 30px;
+    top: -17px;
+}
+
+
+
+
+.stories .grid .sm-cards{
+    width: 55% ;
+    
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+                "card-1 card-2"
+                "card-3 card-3";
+    
+}
+
+.stories .sm-cards .card{
+    background-color: white;
+    border-radius: 20px;
+}
+
+.stories .sm-cards .card h4{
+    padding: 3rem 2rem;
+}
+
+.stories .sm-cards .card img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.stories .card .date{
+    background-color: rgba(33, 103, 0, 0.771);
+    color: white;
+    padding: 10px 0;
+    border-radius: 20px;
+    position: relative;
+    top: -27px;
+    left: 53px;
+    width: 50%;
+}
+
+
+
+
+.stories button{
+    font-size: 22px;
+    margin: 5rem 0;
+    font-weight: 600;
+    color: white;
+    background: black;
+    padding: .5rem 3rem;
+    border-radius: 10px;
+}
+
+
+
+@media screen  and (max-width : 390px){
+    .stories .big-card{
+        display: none;
+    }
+    .stories .grid .sm-cards{
+        width: 100% ;
+    }
+
+    .stories .card .date{
+        
+        font-size: 12px;
+        padding: 10px 0;
+        
+        top: -24px;
+        left: 23px;
+        width: 70%;
+    }
+    /* .sm-cards .card-1{
+        position: relative;
+    }
+
+    .stories .card .date{
+        background-color: rgba(0, 0, 0, 0.771);
+        
+        border-radius: 20px;
+        position: absolute;
+        top: 120px;
+        left: 53px;
+    .stories .card-4 p{
+        
+        
+        position: absolute;
+        top: 51px;
+        left: 383px;
+    }
+} */
+
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: rgb(140, 175, 189);
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 2rem;
+    color: white;
+}
+
+footer .logo{
+    width: 30%;
+}
+
+footer .logo-flex{
+    display: flex;
+    
+}
+footer .logo-flex h3{
+    font-size: 42px;  
+}
+
+footer .logo-flex img{
+    height: 100px;
+    
+    
+}
+footer .logo p{
+    padding: 1rem .5rem;
+}
+
+footer .list h3{
+    font-size: 24px;
+    padding-bottom: 10px; 
+}
+footer .list ul{
+    list-style-type: none;
+}
+
+footer .list li{
+    font-size: 20px; 
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+.social .social-logos{
+    padding: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+.social h3{
+    font-size: 24px;
+}
+
+
+
+
+
+@media screen  and (max-width : 390px){
+
+    footer{
+        display: block;
+        padding: 60px 20px;
+    }
+
+    footer .logo{
+        width: 100%;
+        padding: 20px 0;
+    }
+    footer .logo-flex h3{
+        font-size: 36px;  
+    }
+    footer .list h3{
+        font-size: 20px;
+        padding-bottom: 5px; 
+    }
+    footer .list li{
+        font-size: 16px; 
+        padding: 5px 0;
+    }
+
+    .social h3{
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    
+
+
+
+}
