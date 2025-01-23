@@ -5,7 +5,9 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body{
-    height: 3000px
+    height: 3000px;
+    padding: 0 10px;
+    
 }
 
 nav{
@@ -319,6 +321,7 @@ nav .bar{
 
 .grid{
     display: flex;
+    flex-shrink: ;
     width: 100%;
     gap: 1rem;
     
@@ -387,7 +390,7 @@ nav .bar{
 }
 
 .stories .sm-cards .card h4{
-    padding: 3rem 2rem;
+    padding: 1rem;
 }
 
 .stories .sm-cards .card img{
